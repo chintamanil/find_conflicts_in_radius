@@ -269,24 +269,3 @@ while size >= MIN_HEIGHT_QUAD_NODE:
 max_depth_quad_tree -= 1
 print '\n'
 find_conflicts_in_points()
-
-
-# Given a square airspace, 128km x 128km, and N=10,000 points occupying the airspace
-# our challenge is to efficiently compute how many points are flying too close to one
-# another.
-
-# Point positions will be provided as an Nx2 array of [x,y] coordinates (in meters).
-# Points must maintain a horizontal separation of radius 0.5km from other points.
-
-# If a point is within 0.5km of another point, both are "in conflict".
-# Have count_conflicts return the total number of points that are in a conflicted state.
-# Not the total number of conflicts).
-
-# Do all of your work and testing in this pad.
-# Some common libraries can be imported, but not all, so relying on niche algorithm won't work.
-# This is very solvable with standard python libraries, several ways.
-
-# Coding style, readability, scalability, and documentation all matter! Consider the
-# computational complexity of your solution.
-
-# The N^2 answer can be coded up in 5 minutes and # 10 lines; we'd like to see something better!
